@@ -1,0 +1,41 @@
+{
+  "manifest_version": "0.4",
+  "name": "airbattery-mcp",
+  "version": "0.1.0",
+  "description": "Let AI agents query device battery levels via AirBattery",
+  "long_description": "A read-only MCP server that lets AI agents query battery levels for devices AirBattery already tracks on this Mac (AirPods, iPhone, Bluetooth mice, headphones, speakers). It exposes a standard MCP tool over stdio for compatible clients, including Codex and Claude. It has no Bluetooth permission of its own: it calls AirBattery's command line tool and reports the latest readings AirBattery has detected. Requires AirBattery (https://github.com/lihaoyun6/AirBattery) to be installed and running.",
+  "author": {
+    "name": "Terence Lin",
+    "url": "https://github.com/Terence1219"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Terence1219/AirBattery-mcp"
+  },
+  "homepage": "https://github.com/Terence1219/AirBattery-mcp",
+  "license": "MIT",
+  "server": {
+    "type": "uv",
+    "entry_point": "src/mcp_server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "airbattery-mcp"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "get_battery_status",
+      "description": "Get current battery levels of the user's devices, as reported by AirBattery"
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin"
+    ]
+  }
+}

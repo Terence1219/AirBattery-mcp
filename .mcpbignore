@@ -1,0 +1,16 @@
+# Development files and generated artifacts
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+tests/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.mcpb
+.env
+.env.*
+.DS_Store
