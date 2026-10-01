@@ -9,6 +9,17 @@ The server requires no Bluetooth permission of its own and runs as a process man
 
 > Ask your AI agent: "Which of my devices should I charge before tomorrow's flight?"
 
+## Download
+
+Download the `.mcpb` installation bundle from the **Assets** section of the
+[latest release](https://github.com/Terence1219/AirBattery-mcp/releases/latest).
+The initial release is [v0.1.0](https://github.com/Terence1219/AirBattery-mcp/releases/tag/v0.1.0).
+
+- **Claude Desktop:** Download and install the `.mcpb` bundle, then ask Claude to check your device battery levels. You do not need to clone this repository for bundle installation.
+- **Codex and other MCP clients:** Follow the [Setup](#setup) instructions to launch the server over stdio.
+
+AirBattery must be installed and running on the same Mac. If you already configured this server manually, disable that configuration before using the bundle to avoid duplicate tools.
+
 ## Requirements
 
 - macOS with [AirBattery](https://github.com/lihaoyun6/AirBattery) installed and running
@@ -53,7 +64,7 @@ Add the server to `~/Library/Application Support/Claude/claude_desktop_config.js
 }
 ```
 
-Restart Claude Desktop afterwards. Alternatively, install a published `.mcpb` release or build one using the instructions below.
+Restart Claude Desktop afterwards. Alternatively, use the [release bundle](#download) or build one using the instructions below.
 
 ### Claude Code
 
