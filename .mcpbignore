@@ -6,6 +6,8 @@ __pycache__/
 build/
 dist/
 tests/
+# README demo media is not needed by the MCP server
+docs/assets/
 .pytest_cache/
 .ruff_cache/
 .coverage

@@ -7,7 +7,9 @@ AirBattery discovers devices on your Mac; this server exposes their latest readi
 Compatible clients, including Codex and Claude, can launch the same server. No client-specific API is used.
 The server requires no Bluetooth permission of its own and runs as a process managed by the MCP client.
 
-> Ask your AI agent: "Which of my devices should I charge before tomorrow's flight?"
+> Ask your AI agent: "I'm leaving in 20 minutes. What should I charge first?"
+
+![AirBattery MCP demo: an AI agent checks device batteries and recommends charging AirPods first](docs/assets/airbattery-mcp-demo.gif)
 
 ## Download
 
